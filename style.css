@@ -12,6 +12,7 @@ header {
     top: 0;
     text-align: center;
     position: sticky;
+    transition: all 0.4s;
 }
 
 nav ul {
@@ -111,6 +112,20 @@ footer p {
     height: 500px;
     object-fit: contain;
 }
+.hide-header-button {
+    display:none;
+    border:none;
+    background-color: transparent;
+    width:45px;
+    height: 45px;
+}
+
+.hidden-header {
+    display:none;
+    transition: all 0.4s;
+}
+
+
 @media screen and (max-width: 1192px) {
     .portrait {
         width: 60%;
@@ -129,6 +144,19 @@ footer p {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
         justify-items: center;
+    }
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        padding-left: 25px;
+        align-items: flex-start;    
+    }
+    .hide-header-button {
+        display:block;
+        cursor: pointer;
     }
 }
 

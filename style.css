@@ -124,6 +124,18 @@ footer p {
     display:none;
     transition: all 0.4s;
 }
+table, table * {
+    border: 1px solid black
+}
+
+table td {
+    width:250px;
+    text-align: center;
+}
+
+table tr {
+    height: 50px;
+}
 
 
 @media screen and (max-width: 1192px) {
